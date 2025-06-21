@@ -6,12 +6,12 @@ export default function Home() {
   if (session?.data === null || !session) {
     return (
       <>
-        <title>My App - Login</title>
+        <title>My App - Login Page</title>
         <button onClick={() => signIn()}>Login</button>
       </>
     )
   }
-  
+
   return (
     <div>
       <h1>Hello {session?.user?.name || session?.user?.email}!</h1>
